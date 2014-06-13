@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="Rain">
+<title>简单的demo</title>
+<script type="text/javascript" src="flexPaper/flexpaper_flash.js"></script>
+</head>
+<body>
+    
+<a id="viewerPane" style="width:100%;height:700px;display:block"></a>
+
+<script type="text/javascript"> 
+    var fp = new FlexPaperViewer(   
+             'flexPaper/FlexPaperViewer',
+             'viewerPane', { config : {
+             SwfFile : escape('Paper.swf'),
+             Scale : 0.6, 
+             ZoomTransition : 'easeOut',
+             ZoomTime : 0.5,
+             ZoomInterval : 0.2,
+             FitPageOnLoad : true,
+             FitWidthOnLoad : false,
+             PrintEnabled : true,
+             FullScreenAsMaxWindow : false,
+             ProgressiveLoading : false,
+             MinZoomSize : 0.2,
+             MaxZoomSize : 5,
+             SearchMatchAll : false,
+             InitViewMode : 'Portrait',
+             
+             ViewModeToolsVisible : true,
+             ZoomToolsVisible : true,
+             NavToolsVisible : true,
+             CursorToolsVisible : true,
+             SearchToolsVisible : true,
+             localeChain: 'zh_CN'
+             }});
+</script>
+
+</body>
+</html>
